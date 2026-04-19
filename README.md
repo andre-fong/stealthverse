@@ -1,14 +1,34 @@
 # StealthVerse
 
-Our dApp implementation of ERC-5564: Stealth Addresses.
+Our dApp implementation of [ERC-5564: Stealth Addresses](https://eips.ethereum.org/EIPS/eip-5564).
 
-Created with ❤️ by Andre, Arwin, and Eddy.
+Created with ❤️ by [Andre](https://github.com/andre-fong), [Arwin](https://github.com/arwinfong), and [Eddy](https://github.com/Debaoss).
+
+## Table of Contents
+
+- [Deployment Links](#deployment-links)
+- [Presentation Link](#presentation-link)
+- [Preview](#preview)
+- [Running dApp Locally](#running-dapp-locally)
+- [Deploying smart contract on a Local Development Chain](#deploying-smart-contract-on-a-local-development-chain)
+- [Deploying smart contract on a Testnet Chain (e.g Sepolia)](#deploying-smart-contract-on-a-testnet-chain-eg-sepolia)
+  - [Prerequisites](#prerequisites)
+  - [Setup](#setup)
+  - [Deploy the Contract](#deploy-the-contract)
+  - [(Optional) Verify the Contract on Etherscan](#optional-verify-the-contract-on-etherscan)
 
 ## Deployment Links
 
-You can find our **deployed dApp here**: https://stealth-verse.vercel.app/.
+You can find our **deployed dApp here**:
 
-Find our supplementary `SendAndAnnounce` smart contract deployed here: [0xFA77444e2fB7ED0dd8554f3002bA4f5bB6335CbC](https://sepolia.etherscan.io/address/0xFA77444e2fB7ED0dd8554f3002bA4f5bB6335CbC).
+https://stealth-verse.vercel.app/.
+
+<div style="padding: 15px; border-left: 6px solid #ffcc00; margin-bottom: 15px;">
+<strong style="display: block; margin-bottom: 5px;">⚠️ Reminder</strong>
+Our app requires the <a href="https://metamask.io/" target="_blank" rel="noopener noreferrer">Metamask browser extension</a> (and some knowledge with Ethereum) to use! 
+</div>
+
+Find our supplementary `SendAndAnnounce` smart contract deployed on the Sepolia chain here: [0xFA77444e2fB7ED0dd8554f3002bA4f5bB6335CbC](https://sepolia.etherscan.io/address/0xFA77444e2fB7ED0dd8554f3002bA4f5bB6335CbC).
 
 ## Presentation Link
 
@@ -48,30 +68,31 @@ npm run dev
 
 1. Install dependencies
 
-  ```bash
-  npm install
-  ```
+```bash
+npm install
+```
+
 2. Compile the Solidity contracts
 
-  ```bash
-  forge build
-  ```
+```bash
+forge build
+```
 
 3. Start the local chain using `anvil` (in a separate terminal)
 
-  ```bash
-  anvil
-  ```
-  
+```bash
+anvil
+```
+
 4. Run the unit tests
 
-  ```bash
-  npm test
-  ```
-  
+```bash
+npm test
+```
+
 For educational purposes, I wrote these tests in JavaScript using the Ethereum library [`viem`](https://viem.sh/) and the test framework [vitest](https://vitest.dev/).
 
-FYI, the *Foundry* framework has a different approach to writing unit tests using Solidity directly.
+FYI, the _Foundry_ framework has a different approach to writing unit tests using Solidity directly.
 
 ## Deploying smart contract on a Testnet Chain (e.g _Sepolia_)
 
