@@ -7,6 +7,7 @@ Created with ❤️ by [Andre](https://github.com/andre-fong), [Arwin](https://g
 ## Table of Contents
 
 - [Deployment Links](#deployment-links)
+- [Motivation](#motivation)
 - [Presentation Link](#presentation-link)
 - [Preview](#preview)
 - [Running dApp Locally](#running-dapp-locally)
@@ -21,12 +22,22 @@ Created with ❤️ by [Andre](https://github.com/andre-fong), [Arwin](https://g
 
 You can find our **deployed dApp here**:
 
-https://stealth-verse.vercel.app/.
+**https://stealth-verse.vercel.app/.**
 
 > [!NOTE]
 > Our app requires the [Metamask browser extension](https://metamask.io/) (and some knowledge of Ethereum) to use!
 
 Find our supplementary `SendAndAnnounce` smart contract deployed on the Sepolia chain here: [0xFA77444e2fB7ED0dd8554f3002bA4f5bB6335CbC](https://sepolia.etherscan.io/address/0xFA77444e2fB7ED0dd8554f3002bA4f5bB6335CbC).
+
+## Motivation
+
+**Ethereum is too transparent.** Any transaction you make is public on the blockchain and can easily be linked back to your wallet. This is an issue if we care about privacy.
+
+Stealth addresses are private one-time-use addresses that are derived from your public meta-address. Senders can use your meta-address to derive new stealth addresses for you, which they send their funds to. As a receiver, your meta-address helps you monitor your stealth addresses and use their funds.
+
+Using stealth addresses breaks the linkability between your public wallet (identity) and the private stealth wallets, granting **receiver privacy** and **unlinkability**.
+
+This app implements the standard proposed in [ERC-5564](https://eips.ethereum.org/EIPS/eip-5564), providing a non-interactive way of sending funds to meta-addresses and checking the balance of your own stealth wallets.
 
 ## Presentation Link
 
