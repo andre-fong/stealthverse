@@ -23,10 +23,8 @@ You can find our **deployed dApp here**:
 
 https://stealth-verse.vercel.app/.
 
-<div style="padding: 15px; border-left: 6px solid #ffcc00; margin-bottom: 15px;">
-<strong style="display: block; margin-bottom: 5px;">⚠️ Reminder</strong>
-Our app requires the <a href="https://metamask.io/" target="_blank" rel="noopener noreferrer">Metamask browser extension</a> (and some knowledge with Ethereum) to use! 
-</div>
+> [!NOTE]
+> Our app requires the [Metamask browser extension](https://metamask.io/) (and some knowledge of Ethereum) to use!
 
 Find our supplementary `SendAndAnnounce` smart contract deployed on the Sepolia chain here: [0xFA77444e2fB7ED0dd8554f3002bA4f5bB6335CbC](https://sepolia.etherscan.io/address/0xFA77444e2fB7ED0dd8554f3002bA4f5bB6335CbC).
 
